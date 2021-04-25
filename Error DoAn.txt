@@ -5,8 +5,8 @@
 	- Button Reset NhanVien - Chuc Vu --------- Fixed
 	- Button Delete SanPham - Loai San Pham ------ Fixed
 	- Form Register -------- Fixed
+	- Don't run work notes. ---------------Fixed
 	
 - To Do
-	- Add Delete button for NhanVien
-	- Rerun the database
+	- Add Delete button for NhanVien --- implemented
 
