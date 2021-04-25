@@ -4690,10 +4690,11 @@ public class frmTrangChu extends javax.swing.JFrame {
             System.out.println("Thất Bại");
         }
         LayDuLieuSanPham("1");
+        ResSanPham();
     }//GEN-LAST:event_bntSua_SanPhamActionPerformed
 
     private void btnThem_SanPhamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThem_SanPhamActionPerformed
-        String TenSanPham, MaLoaiSanPham, GiaNhap, GiaBan, HangSanXuat, TonKho, TrangThai, ChuThich;
+        String TenSanPham, MaLoaiSanPham, GiaNhap, GiaBan, HangSanXuat, TonKho, TrangThai, Image, ChuThich;
         TenSanPham = txtTenSanPham_SanPham.getText();
         MaLoaiSanPham = GetCbbSelected(cbbMaLoaiSanPham_SanPham);
         GiaNhap = txtGiaNhap_SanPham.getText();
@@ -4702,10 +4703,10 @@ public class frmTrangChu extends javax.swing.JFrame {
         TonKho = txtTonKho_SanPham.getText();
         TrangThai = "1";
         ChuThich = txtChuThich_SanPham.getText();
-        //Image = txtImg_SanPham.getText();
+        Image = "";
 
         String cautruyvan = "insert into SanPham "
-                + "values(N'" + TenSanPham + "'," + MaLoaiSanPham + "," + HangSanXuat + "," + GiaNhap + "," + GiaBan + "," + TonKho + "," + TrangThai + "',N'" + ChuThich + "')";
+                + "values(N'" + TenSanPham + "'," + MaLoaiSanPham + "," + HangSanXuat + "," + GiaNhap + "," + GiaBan + "," + TonKho + "," + TrangThai + ",'" + Image + "',N'" + ChuThich + "')";
         System.out.println(cautruyvan);
         boolean kiemtra = KiemTraNhanSanPham(0);
         if (kiemtra) {
@@ -4715,6 +4716,7 @@ public class frmTrangChu extends javax.swing.JFrame {
             System.out.println("Thất Bại");
         }
         LayDuLieuSanPham("1");
+        ResSanPham();
     }//GEN-LAST:event_btnThem_SanPhamActionPerformed
 
     private void cbbMaLoaiSanPham_SanPhamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbbMaLoaiSanPham_SanPhamActionPerformed

@@ -1,6 +1,6 @@
 - Error 
-	- add product
-	- find employee
+	- add product ----- Fixed
+	- find employee 
 	- Button Reset NhanVien - Tai Khoan -------- Fixed
 	- Button Reset NhanVien - Chuc Vu --------- Fixed
 	- Button Delete SanPham - Loai San Pham ------ Fixed
